@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace _University
 {
-    public interface  IBaseService<T>
+    public interface  IStudentRepository:IBaseRepository<Student>
     {
-        void Add(T model);
-        List<T> GetAll();
     }
+
 }

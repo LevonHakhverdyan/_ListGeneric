@@ -10,7 +10,7 @@ namespace _University
     {
         static void Main(string[] args)
         {
-            IStudentService student = new StudentService();
+            IStudentService student = new StudentRepository();
             student.Add(new Student("Levon",22));
             student.Add(new Student("Levon1",23));
             student.Add(new Student("Levon2",24));
@@ -22,7 +22,7 @@ namespace _University
             students[1]._name = "hahaha";
             student.Update(students[1]);
             student.Show(students);
-            ITeacherService teacher = new TeacherService();
+            ITeacherRepository teacher = new TeacherRepository();
             teacher.Add(new Teacher("Tikin1", 60));
             teacher.Add(new Teacher("Tikin2", 61));
             teacher.Add(new Teacher("Tikin3", 62));
