@@ -13,6 +13,6 @@ namespace _University
         void Remove(T model);
         T Get(Guid id);
         List<T> GetAll();
-
+        int IndexOf(T model);
     }
 }

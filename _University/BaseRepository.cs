@@ -29,7 +29,7 @@ namespace _University
         {
             models.Remove(model);
         }
-        public int IndexOff(T model)
+        public int IndexOf(T model)
         {
             return models.IndexOf(model);
         }
